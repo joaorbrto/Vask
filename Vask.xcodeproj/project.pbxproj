@@ -14,8 +14,8 @@
 		E9C08BD12C8B21C100DCA1CE /* VaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C08BD02C8B21C100DCA1CE /* VaskTests.swift */; };
 		E9C08BDB2C8B21C100DCA1CE /* VaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C08BDA2C8B21C100DCA1CE /* VaskUITests.swift */; };
 		E9C08BDD2C8B21C100DCA1CE /* VaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C08BDC2C8B21C100DCA1CE /* VaskUITestsLaunchTests.swift */; };
-		E9C08BEA2C8B21E600DCA1CE /* CategoriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C08BE92C8B21E600DCA1CE /* CategoriaView.swift */; };
 		E9C08BEC2C8B221C00DCA1CE /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C08BEB2C8B221C00DCA1CE /* Classes.swift */; };
+		E9C08BEE2C8B3EA000DCA1CE /* TarefaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C08BED2C8B3EA000DCA1CE /* TarefaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,8 @@
 		E9C08BD62C8B21C100DCA1CE /* VaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C08BDA2C8B21C100DCA1CE /* VaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaskUITests.swift; sourceTree = "<group>"; };
 		E9C08BDC2C8B21C100DCA1CE /* VaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E9C08BE92C8B21E600DCA1CE /* CategoriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaView.swift; sourceTree = "<group>"; };
 		E9C08BEB2C8B221C00DCA1CE /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		E9C08BED2C8B3EA000DCA1CE /* TarefaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,8 @@
 				E9C08BC12C8B21C000DCA1CE /* ContentView.swift */,
 				E9C08BC32C8B21C100DCA1CE /* Assets.xcassets */,
 				E9C08BC52C8B21C100DCA1CE /* Preview Content */,
-				E9C08BE92C8B21E600DCA1CE /* CategoriaView.swift */,
 				E9C08BEB2C8B221C00DCA1CE /* Classes.swift */,
+				E9C08BED2C8B3EA000DCA1CE /* TarefaView.swift */,
 			);
 			path = Vask;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9C08BC22C8B21C000DCA1CE /* ContentView.swift in Sources */,
-				E9C08BEA2C8B21E600DCA1CE /* CategoriaView.swift in Sources */,
+				E9C08BEE2C8B3EA000DCA1CE /* TarefaView.swift in Sources */,
 				E9C08BEC2C8B221C00DCA1CE /* Classes.swift in Sources */,
 				E9C08BC02C8B21C000DCA1CE /* VaskApp.swift in Sources */,
 			);
