@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
-struct VaskApp: App {
+struct MeuApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TarefaView()
+                .modelContainer(for: Tarefa.self)
         }
     }
 }
+

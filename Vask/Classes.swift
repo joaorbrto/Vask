@@ -6,24 +6,19 @@
 //
 
 import Foundation
+import SwiftData
 
-class Tarefa: Identifiable, ObservableObject {
-    let id = UUID()
-    @Published var titulo: String
-    @Published var descricao: String
-    @Published var dataDeVencimento: Date
-    @Published var prioridade: String
-    @Published var status: String
-        
-    init() {
-        self.titulo = ""
-        self.descricao = ""
-        self.dataDeVencimento = Date.now + 3600
-        self.prioridade = ""
-        self.status = ""
-    }
-    
+@Model
+class Tarefa {
+    @Attribute(.unique) var id: UUID
+    var titulo: String
+    var descricao: String
+    var dataDeVencimento: Date
+    var prioridade: String
+    var status: String
+
     init(titulo: String, descricao: String, dataDeVencimento: Date, prioridade: String, status: String) {
+        self.id = UUID()
         self.titulo = titulo
         self.descricao = descricao
         self.dataDeVencimento = dataDeVencimento
@@ -31,6 +26,32 @@ class Tarefa: Identifiable, ObservableObject {
         self.status = status
     }
 }
+
+//class Tarefa: Identifiable, ObservableObject {
+//    let id = UUID()
+//    @Published var titulo: String
+//    @Published var descricao: String
+//    @Published var dataDeVencimento: Date
+//    @Published var prioridade: String
+//    @Published var status: String
+//        
+//    init() {
+//        self.titulo = ""
+//        self.descricao = ""
+//        self.dataDeVencimento = Date.now + 3600
+//        self.prioridade = ""
+//        self.status = ""
+//    }
+//    
+//    init(titulo: String, descricao: String, dataDeVencimento: Date, prioridade: String, status: String) {
+//        self.titulo = titulo
+//        self.descricao = descricao
+//        self.dataDeVencimento = dataDeVencimento
+//        self.prioridade = prioridade
+//        self.status = status
+//    }
+//}
+
 
 class Categoria: Identifiable, ObservableObject {
     let id = UUID()

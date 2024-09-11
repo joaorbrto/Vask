@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E956C3FE2C910BB50084284B /* AddTarefaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956C3FD2C910BB50084284B /* AddTarefaView.swift */; };
+		E956C4002C9110DD0084284B /* EditTarefaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956C3FF2C9110DD0084284B /* EditTarefaView.swift */; };
 		E9C08BC02C8B21C000DCA1CE /* VaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C08BBF2C8B21C000DCA1CE /* VaskApp.swift */; };
 		E9C08BC22C8B21C000DCA1CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C08BC12C8B21C000DCA1CE /* ContentView.swift */; };
 		E9C08BC42C8B21C100DCA1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C08BC32C8B21C100DCA1CE /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E956C3FD2C910BB50084284B /* AddTarefaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTarefaView.swift; sourceTree = "<group>"; };
+		E956C3FF2C9110DD0084284B /* EditTarefaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTarefaView.swift; sourceTree = "<group>"; };
 		E9C08BBC2C8B21C000DCA1CE /* Vask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C08BBF2C8B21C000DCA1CE /* VaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaskApp.swift; sourceTree = "<group>"; };
 		E9C08BC12C8B21C000DCA1CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				E9C08BC52C8B21C100DCA1CE /* Preview Content */,
 				E9C08BEB2C8B221C00DCA1CE /* Classes.swift */,
 				E9C08BED2C8B3EA000DCA1CE /* TarefaView.swift */,
+				E956C3FD2C910BB50084284B /* AddTarefaView.swift */,
+				E956C3FF2C9110DD0084284B /* EditTarefaView.swift */,
 			);
 			path = Vask;
 			sourceTree = "<group>";
@@ -264,9 +270,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9C08BC22C8B21C000DCA1CE /* ContentView.swift in Sources */,
+				E956C3FE2C910BB50084284B /* AddTarefaView.swift in Sources */,
 				E9C08BEE2C8B3EA000DCA1CE /* TarefaView.swift in Sources */,
 				E9C08BEC2C8B221C00DCA1CE /* Classes.swift in Sources */,
 				E9C08BC02C8B21C000DCA1CE /* VaskApp.swift in Sources */,
+				E956C4002C9110DD0084284B /* EditTarefaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
