@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		E956C3FE2C910BB50084284B /* AddTarefaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956C3FD2C910BB50084284B /* AddTarefaView.swift */; };
 		E956C4002C9110DD0084284B /* EditTarefaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956C3FF2C9110DD0084284B /* EditTarefaView.swift */; };
+		E98100FD2C9CDEA80023ED5F /* CategoriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98100FC2C9CDEA80023ED5F /* CategoriaView.swift */; };
+		E98101012C9CDF5F0023ED5F /* AddTarefaToCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98101002C9CDF5F0023ED5F /* AddTarefaToCategoryView.swift */; };
+		E98101032C9CE0740023ED5F /* CategoriaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98101022C9CE0740023ED5F /* CategoriaViewModel.swift */; };
+		E98101052C9CE2E00023ED5F /* TarefasPorCategoriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98101042C9CE2E00023ED5F /* TarefasPorCategoriaView.swift */; };
 		E9C08BC02C8B21C000DCA1CE /* VaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C08BBF2C8B21C000DCA1CE /* VaskApp.swift */; };
 		E9C08BC22C8B21C000DCA1CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C08BC12C8B21C000DCA1CE /* ContentView.swift */; };
 		E9C08BC42C8B21C100DCA1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C08BC32C8B21C100DCA1CE /* Assets.xcassets */; };
@@ -40,6 +44,10 @@
 /* Begin PBXFileReference section */
 		E956C3FD2C910BB50084284B /* AddTarefaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTarefaView.swift; sourceTree = "<group>"; };
 		E956C3FF2C9110DD0084284B /* EditTarefaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTarefaView.swift; sourceTree = "<group>"; };
+		E98100FC2C9CDEA80023ED5F /* CategoriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaView.swift; sourceTree = "<group>"; };
+		E98101002C9CDF5F0023ED5F /* AddTarefaToCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTarefaToCategoryView.swift; sourceTree = "<group>"; };
+		E98101022C9CE0740023ED5F /* CategoriaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaViewModel.swift; sourceTree = "<group>"; };
+		E98101042C9CE2E00023ED5F /* TarefasPorCategoriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefasPorCategoriaView.swift; sourceTree = "<group>"; };
 		E9C08BBC2C8B21C000DCA1CE /* Vask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C08BBF2C8B21C000DCA1CE /* VaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaskApp.swift; sourceTree = "<group>"; };
 		E9C08BC12C8B21C000DCA1CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +90,10 @@
 		E9C08BB32C8B21C000DCA1CE = {
 			isa = PBXGroup;
 			children = (
+				E98101042C9CE2E00023ED5F /* TarefasPorCategoriaView.swift */,
+				E98101022C9CE0740023ED5F /* CategoriaViewModel.swift */,
+				E98100FC2C9CDEA80023ED5F /* CategoriaView.swift */,
+				E98101002C9CDF5F0023ED5F /* AddTarefaToCategoryView.swift */,
 				E9C08BBE2C8B21C000DCA1CE /* Vask */,
 				E9C08BCF2C8B21C100DCA1CE /* VaskTests */,
 				E9C08BD92C8B21C100DCA1CE /* VaskUITests */,
@@ -272,7 +284,11 @@
 				E9C08BC22C8B21C000DCA1CE /* ContentView.swift in Sources */,
 				E956C3FE2C910BB50084284B /* AddTarefaView.swift in Sources */,
 				E9C08BEE2C8B3EA000DCA1CE /* TarefaView.swift in Sources */,
+				E98101032C9CE0740023ED5F /* CategoriaViewModel.swift in Sources */,
+				E98100FD2C9CDEA80023ED5F /* CategoriaView.swift in Sources */,
 				E9C08BEC2C8B221C00DCA1CE /* Classes.swift in Sources */,
+				E98101012C9CDF5F0023ED5F /* AddTarefaToCategoryView.swift in Sources */,
+				E98101052C9CE2E00023ED5F /* TarefasPorCategoriaView.swift in Sources */,
 				E9C08BC02C8B21C000DCA1CE /* VaskApp.swift in Sources */,
 				E956C4002C9110DD0084284B /* EditTarefaView.swift in Sources */,
 			);

@@ -25,7 +25,24 @@ class Tarefa {
         self.prioridade = prioridade
         self.status = status
     }
-}
+    func renovarStatus() {
+            let agora = Date()
+            
+            if status == "Pendente" && dataDeVencimento <= agora {
+                status = "Pendente"
+                dataDeVencimento = Calendar.current.date(byAdding: .day, value: 1, to: dataDeVencimento) ?? agora
+            }
+        }
+        
+        func renovarStatusSemanal() {
+            let agora = Date()
+
+            if status == "Pendente" && dataDeVencimento <= agora {
+                status = "Pendente"
+                dataDeVencimento = Calendar.current.date(byAdding: .weekOfYear, value: 1, to: dataDeVencimento) ?? agora
+            }
+        }
+    }
 
 //class Tarefa: Identifiable, ObservableObject {
 //    let id = UUID()
@@ -58,6 +75,7 @@ class Categoria: Identifiable, ObservableObject {
     @Published var nome: String
     @Published var descricao: String
     @Published var tarefas: [Tarefa] = []
+    
     init(nome: String, descricao: String) {
         self.nome = nome
         self.descricao = descricao
@@ -80,5 +98,6 @@ class Categoria: Identifiable, ObservableObject {
     func ordenarTarefasPorPrioridade() {
         tarefas.sort { prioridadeValor($0.prioridade) > prioridadeValor($1.prioridade) }
     }
+    
 }
 

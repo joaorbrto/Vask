@@ -6,13 +6,60 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct AddTarefaToCategoryView: View {
+    @Environment(\.modelContext) private var modelContext
+    var categoria: Categoria
+    @Binding var isPresented: Bool
+    
+    @State private var titulo = ""
+    @State private var descricao = ""
+    @State private var dataDeVencimento = Date()
+    @State private var prioridade = "Média"
+    
+    let prioridades = ["Alta", "Média", "Baixa"]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                Section(header: Text("Informações da Tarefa")) {
+                    TextField("Título", text: $titulo)
+                    TextField("Descrição", text: $descricao)
+                    DatePicker("Data de Vencimento", selection: $dataDeVencimento, displayedComponents: .date)
+                    Picker("Prioridade", selection: $prioridade) {
+                        ForEach(prioridades, id: \.self) {
+                            Text($0)
+                        }
+                    }
+                }
+                Section {
+                    Button(action: saveTarefa) {
+                        Text("Salvar Tarefa")
+                    }
+                }
+            }
+            .navigationTitle("Nova Tarefa")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Cancelar") {
+                        isPresented = false
+                    }
+                }
+            }
+        }
     }
-}
-
-#Preview {
-    AddTarefaToCategoryView()
+    
+    private func saveTarefa() {
+        let novaTarefa = Tarefa(titulo: titulo, descricao: descricao, dataDeVencimento: dataDeVencimento, prioridade: prioridade, status: "Pendente")
+        categoria.tarefas.append(novaTarefa)
+        modelContext.insert(novaTarefa)
+        
+        do {
+            try modelContext.save()
+            isPresented = false
+        } catch {
+            print("Erro ao salvar tarefa: \(error.localizedDescription)")
+        }
+    }
 }

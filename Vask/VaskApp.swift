@@ -12,7 +12,7 @@ import SwiftData
 struct MeuApp: App {
     var body: some Scene {
         WindowGroup {
-            TarefaView()
+            CategoriaView()
                 .modelContainer(for: Tarefa.self)
         }
     }
